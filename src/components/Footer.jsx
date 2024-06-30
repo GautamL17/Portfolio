@@ -26,12 +26,12 @@ const Footer = () => {
   }, []); 
 
   return (
-    <footer className='w-[70%] mx-auto flex justify-between items-center py-1 mt-10 overflow-hidden '>
-      <div className="flex items-center gap-10">
-        <a className='bg-black border border-zinc-800 py-1 px-2 hover:bg-purple-300 hover:border-purple-600 hover:text-zinc-900 text-zinc-400 font-semibold' href="https://github.com/GautamL17">
+    <footer className='w-[70%] mx-auto flex md:justify-between 2xl:justify-between xl:justify-between sm:felx-col items-center gap-2 py-1 mt-10 overflow-hidden '>
+      <div className="flex items-center 2xl:gap-10 xl:gap-10 md:gap-10 sm:gap-6 gap-2 ">
+        <a target='#' className='bg-black border border-zinc-800 py-1 px-2 hover:bg-purple-300 hover:border-purple-600 hover:text-zinc-900 text-zinc-400 font-semibold' href="https://github.com/GautamL17">
           Github
         </a>
-        <a className='bg-black border border-zinc-800 py-1 px-2 hover:bg-purple-300 hover:border-purple-600 hover:text-zinc-900 text-zinc-400 font-semibold' href="https://www.linkedin.com/in/gautam-lodwal-292682235/">
+        <a target='#' className='bg-black border border-zinc-800 py-1 px-2 hover:bg-purple-300 hover:border-purple-600 hover:text-zinc-900 text-zinc-400 font-semibold' href="https://www.linkedin.com/in/gautam-lodwal-292682235/">
           LinkedIn
         </a>
       </div>
