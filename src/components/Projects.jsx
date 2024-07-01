@@ -1,4 +1,5 @@
 import React from 'react'
+import Mouse from './Blob'
 
 const Projects = () => {
   return (
@@ -11,7 +12,7 @@ const Projects = () => {
                     in one note. Techstack here used is MERN stack
                 </p>
                 <p className='sm:w-[80%] md:w-[50%] xl:w-[50%] 2xl:w-[50%] text-sm my-5 text-zinc-100' >
-                    <a className=' border-b border-pink-300 hover:bg-pink-300 hover:text-black mr-1 font-semibold' href="https://github.com/GautamL17/NoteWave">Voting App</a>
+                    <a className=' border-b border-pink-300 hover:bg-pink-300 hover:text-black mr-1 font-semibold' href="https://github.com/GautamL17/VotingApp-Backend/">Voting App</a>
                     is a voting application that allows users to vote various candidates
                 </p>
                 </section>

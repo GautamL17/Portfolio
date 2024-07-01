@@ -14,8 +14,8 @@ const About = () => {
                     Machine Learning.
                 </p>
                 <section className='flex gap-10 items-center my-5' >
-                    <button className='bg-zinc-950 hover:border-purple-600 hover:bg-purple-300 text-zinc-400 px-2 py-1 hover:text-zinc-900 border border-zinc-800 font-semibold' > <a  href="mailto:gautamlodwal17@gmail.com">Email me</a> </button>
-                    <button className='bg-zinc-950 hover:border-purple-600 hover:bg-purple-300 text-zinc-400 px-2 py-1 hover:text-zinc-900 border border-zinc-800 font-semibold' ><a  href='/assets/Gautam Lodwal.pdf' download >Resume</a></button>
+                    <button className='bg-zinc-950 hover:border-purple-600 hover:bg-purple-300 text-zinc-400 px-2 py-1 hover:text-zinc-900 border border-zinc-800 font-semibold hover:shadow-[10px 35px 60px -15px rgba(127, 17, 224, 1)] ' > <a  href="mailto:gautamlodwal17@gmail.com">Email me</a> </button>
+                    <button className='bg-zinc-950 hover:border-purple-600 hover:bg-purple-300 text-zinc-400 px-2 py-1 hover:text-zinc-900 border border-zinc-800 font-semibold hover:shadow-[10px 35px 60px -15px rgba(127, 17, 224, 1)] ' ><a  href='/assets/Gautam Lodwal.pdf' download >Resume</a></button>
                 </section>
             </section>
                 <section className='w-[70%] mx-auto my-5' >
