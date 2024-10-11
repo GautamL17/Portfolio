@@ -9,7 +9,7 @@ import Blob from './components/Blob'
 const App = () => {
   return (
     <>
-    <div className="relative overflow-hidden h-sc reen">
+    <div className="relative overflow-hidden h-screen">
     <Navbar/> 
     <Home/>
     <About/>
