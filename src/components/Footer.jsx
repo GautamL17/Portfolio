@@ -1,42 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const Footer = () => {
-  const [time, setTime] = useState({
-    hour: 0,
-    minute: 0,
-    second: 0,
-  });
 
-  useEffect(() => {
-    const updateClock = () => {
-      let date = new Date();
-      let hour = date.getHours();
-      let minute = date.getMinutes();
-      let second = date.getSeconds();
-      if (hour > 12) {
-        hour -= 12;
-      }
-      setTime({ hour, minute, second });
-    };
-
-    updateClock(); 
-    const intervalId = setInterval(updateClock, 1000); 
-
-    return () => clearInterval(intervalId); 
-  }, []); 
 
   return (
-    <footer className='w-[70%] mx-auto flex md:justify-between 2xl:justify-between xl:justify-between sm:felx-col items-center gap-2 py-1 mt-10 overflow-hidden '>
-      <div className="flex items-center 2xl:gap-10 xl:gap-10 md:gap-10 sm:gap-6 gap-2 ">
-        <a target='#' className='bg-black border border-zinc-800 py-1 px-2 hover:bg-purple-300 hover:border-purple-600 hover:text-zinc-900 text-zinc-400 font-semibold' href="https://github.com/GautamL17">
-          Github
-        </a>
-        <a target='#' className='bg-black border border-zinc-800 py-1 px-2 hover:bg-purple-300 hover:border-purple-600 hover:text-zinc-900 text-zinc-400 font-semibold' href="https://www.linkedin.com/in/gautam-lodwal-292682235/">
-          LinkedIn
-        </a>
+    <footer className='w-[60%] mx-auto  md:justify-between 2xl:justify-between xl:justify-between sm:felx-col items-center gap-2 py-1  overflow-hidden mb-2'>
+      <div className="w-full">
+        <span className='font-medium text-zinc-200 text-md border-transparent' >
+          Elsewhere
+        </span>
+        <ul className='border rounded-lg mt-5 border-zinc-700 bg-zinc-900 px-2 py-1 flex'>
+          <li className='sm:w-[100%] md:w-[100%] xl:w-[100%] 2xl:w-[100%] text-sm my-2 text-zinc-100 p-2 border hover:bg-zinc-800 rounded-lg border-zinc-900 hover:border-zinc-700 mx-auto'>
+            <a href="mailto:gautamlodwal17@gmail.com" className='flex gap-2 items-center justify-center'> <box-icon name='gmail' type='logo' color='#ffffff' ></box-icon> Email</a>
+          </li>
+          <li className='sm:w-[100%] md:w-[100%] xl:w-[100%] 2xl:w-[100%] text-sm my-2 text-zinc-100 p-2 border hover:bg-zinc-800 rounded-lg border-zinc-900 hover:border-zinc-700 mx-auto'>
+            <a href="https://www.linkedin.com/in/gautam-lodwal-292682235/" className='flex gap-2 items-center justify-center'><box-icon name='linkedin-square' type='logo' color='#ffffff' ></box-icon> Linkedin</a>
+          </li>
+          <li className='sm:w-[100%] md:w-[100%] xl:w-[100%] 2xl:w-[100%] text-sm my-2 text-zinc-100 p-2 border hover:bg-zinc-800 rounded-lg border-zinc-900 hover:border-zinc-700 mx-auto'>
+            <a href="https://github.com/GautamL17" className='flex gap-2 items-center justify-center'><box-icon name='github' type='logo' color='#ffffff' ></box-icon> Github</a>
+          </li>
+        </ul>
       </div>
-      <div className="border-zinc-800 border font-mono text-purple-400 py-1 px-2 items-center">
-        {time.hour}:{time.minute < 10 ? `0${time.minute}` : time.minute}:{time.second < 10 ? `0${time.second}` : time.second}
+      <div className="mx-auto w-[60%] flex justify-center items-center self-center gap-4 mt-4">
+        <span>Made with 💖 by Gautam</span>
       </div>
     </footer>
   );
