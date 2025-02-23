@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+.scroll-hidden {
+  overflow-y: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none; 
+}
+
+
+@theme {
+  --font-vt323: "vt323", "veronica";
+  --font-spacemono: "Space Mono", serif;
+};
+
+@theme {
+  --animate-fade-in-filler-1: fade-in-filler 0.8s ease-in infinite;
+  --animate-fade-in-filler-2: fade-in-filler 0.5s ease-in infinite;
+  --animate-fade-in-filler-: fade-in-filler 0.3s ease-in infinite;
+
+  @keyframes fade-in-filler {
+    0% {
+      opacity: 0;
+    },
+    100% {
+      opacity: 1;
+    },
+  }
+}
