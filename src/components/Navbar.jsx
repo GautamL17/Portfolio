@@ -16,7 +16,7 @@ const Navbar = () => {
                             </div>
                             <div className={`px-10 border-r-[2px] border-dotted border-zinc-800 flex flex-grow cursor-pointer
                                 justify-center items-center py-2 text-zinc-300 hover:text-zinc-100 ${text_color}`}>
-                                <a href="/assets/Gautam Lodwal.pdf">
+                                <a href="/assets/Gautam_Lodwal_Resume.pdf">
                                     Resume
                                 </a>
                             </div>
@@ -26,13 +26,6 @@ const Navbar = () => {
                                     About
                                 </NavLink>
                             </div>
-                            {/* <div className={`px-10 flex flex-grow text-zinc-300 hover:text-zinc-100 justify-center items-center py-2 cursor-pointer
-                                ${text_color}`}>
-                                <NavLink to='/contact'>
-                                    Contact
-                                </NavLink>
-
-                            </div> */}
                         </div>
                     </div>
                 </div>
