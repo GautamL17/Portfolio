@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <>
             <nav>
-                <div className="w-[97.8%] border-b-[2px] xl:top-auto 2xl:top-auto md:top-0 sm:top-0  border-zinc-800 z-50  fixed bg-[#f1faee]">
+                <div className="w-[97.8%] border-b-[2px] xl:top-auto 2xl:top-auto md:top-0 sm:top-0  border-zinc-800 z-100  fixed bg-[#f1faee]">
                     <div className="flex justify-between items-center ">
                         <div className={`ml-5 text-xl flex gap-2 justify-center ${text_color}`}>
                             <img src="/assets/astronaut 1.svg" alt="" />
