@@ -25,7 +25,7 @@ function App() {
                   <Home />
                   <Education_CurrentEvents />
                   <FeaturedProjects />
-                  {/* <BottomInfo /> */}
+                  <BottomInfo/> 
                 </div>
             </div>
           </div>
