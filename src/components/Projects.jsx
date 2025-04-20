@@ -9,14 +9,14 @@ const Projects = () => {
         <>
             <OuterLayout />
             <div className="absolute inset-0 flex items-center justify-center z-0">
-                <div className="w-[98%] h-[96%] border-[2px] border-zinc-800 overflow-y-auto scroll-hidden bg-black font-mono">
+                <div className="w-[98%] h-[96%] border-[2px] border-zinc-800 overflow-y-auto scroll-hidden bg-[#f1faee] font-mono">
                     <Navbar />
-                    <div className="flex mb-30 text-white">
+                    <div className="flex mb-30 text-zinc-900">
                         <div className=" w-[100%] ">
-                            <div className=" mt-30 ">
-                                <div className="mx-20 border-2 border-dotted border-zinc-700 px-2 py-3">
+                            <div className=" mt-10 ">
+                                <div className="mx-20 px-2 py-3">
                                     <div className="">
-                                        <h2 className="text-2xl font-spacemono py-5 px-3 border-dotted border-zinc-700 ">
+                                        <h2 className="text-2xl font-spacemono py-5 px-3  ">
                                             Projects✨
                                         </h2>
                                         <div className="gap-[5%]">

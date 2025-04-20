@@ -1,17 +1,47 @@
 import React from 'react'
+import { useState,useEffect } from 'react'
 // import FillerComponent2 from './FillerComponent2'
 import FillerComponent1 from './FillerComponent1'
-// import TextPressure from './TextPressure'
+import axios from 'axios'
 const Education_CurrentEvents = () => {
+    const [artworks,setArtworks] = useState([]);
+    useEffect(() => {
+      const fetchHighlights = async () => {
+        try {
+          // 1. Get all highlighted object IDs
+          const { data } = await axios.get(
+            'https://collectionapi.metmuseum.org/public/collection/v1/search?isHighlight=true&q=art'
+          );
+  
+          const highlightIds = data.objectIDs?.slice(0, 4); // 2. Get only first 4
+  
+          if (highlightIds?.length > 0) {
+            // 3. Fetch details for those 4 artworks
+            const detailRequests = highlightIds.map((id) =>
+              axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`)
+            );
+  
+            const detailResponses = await Promise.all(detailRequests);
+            const artworksData = detailResponses.map((res) => res.data);
+  
+            setArtworks(artworksData);
+          }
+        } catch (error) {
+          console.error('Error fetching highlighted artworks:', error);
+        }
+      };
+  
+      fetchHighlights();
+    }, []);
   return (
     <>
-      <div className="flex text-zinc-300">
+      <div className="flex text-zinc-900">
         <div className=" mt-3 w-full">
           {/* Currently Section */}
           <div className=" text-zinc-100">
             <div className=" mt-30 border-y-2 border-dotted border-zinc-700">
               <div className="mx-20 border-x-2 border-dotted border-zinc-700 ">
-                <section className="bg ">
+                <section className="bg text-zinc-900">
                   <div className="py-5 px-3 border-b-2 border-dotted border-zinc-700">
                     <h2 className='text-2xl font-spacemono'>Currently</h2>
                   </div>
@@ -30,7 +60,7 @@ const Education_CurrentEvents = () => {
           {/* filler */}
           <FillerComponent1/>
           {/* Education Section */}
-          <div className="border-y-2 border-dotted border-zinc-700">
+          <div className="border-y-2 border-dotted border-zinc-700 text-zinc-900">
             <div className="mx-20 border-x-2 border-dotted border-zinc-700 ">
               <section className=''>
                 <div className="py-5 px-3 border-b-2 border-dotted border-zinc-700">
@@ -106,7 +136,6 @@ const Education_CurrentEvents = () => {
           </div>
         </div>
       </div>
-      {/* <FillerComponent2/> */}
     </>
   )
 }

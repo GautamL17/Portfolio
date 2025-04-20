@@ -3,7 +3,7 @@ import FeaturedProjectData from '../utils/FeaturedProjectData'
 const FeaturedProjects = () => {
     return (
         <>
-            <div className="flex mt-60 mb-30 text-white">
+            <div className="flex mt-60 mb-30 text-zinc-900">
                 <div className=" w-[100%] ">
                     <div className=" mt-30 border-y-2 border-dotted border-zinc-700">
                         <div className="mx-20 borer-x-2 borer-dotted border-zinc-700 ">
@@ -14,14 +14,14 @@ const FeaturedProjects = () => {
                                 <div className="flex justify-between gap-[5%]">
                                     {
                                         FeaturedProjectData.map((data, index) => (
-                                            <div key={index} className="text-white relative flex flex-col justify-center group  w-[50%] py-8 px-1 border-x-2 border-dotted border-zinc-700 ">
+                                            <div key={index} className="text-zinc-900 relative flex flex-col justify-center group  w-[50%] py-8 px-1 border-x-2 border-dotted border-zinc-700 ">
                                                 {/* Project Content */}
-                                                <div className="flex text-white gap-3 items-center ml-3">
+                                                <div className="flex gap-3 items-center ml-3">
                                                     <div className="">
                                                         <p className="text-xl ">{data.projectName}</p>
                                                     </div>
                                                 </div>
-                                                <p className="ml-3 text-whi">
+                                                <p className="ml-3">
                                                     {data.detail}
                                                 </p>
 

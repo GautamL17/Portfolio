@@ -90,15 +90,15 @@ const BottomInfo = () => {
     }, []);
 
     return (
-        <div className="w-[97.8%] border-t-[2px] border-zinc-800 z-100 bottom-4 fixed bg-black">
+        <div className="w-[97.8%] border-t-2 border-zinc-800 z-100 bottom-4 fixed bg-[#f1faee]">
             <div className="flex justify-between items-center">
-                <div className={`border-r-[2px] px-5 border-zinc-800 border-dotted flex justify-center items-center py-2 text-zinc-300 hover:text-zinc-100 ${text_color}`}>
+                <div className={`border-r-2 px-5 border-zinc-800 border-dotted flex justify-center items-center py-2 text-zinc-900 ${text_color}`}>
                     <a href="https://open.spotify.com/track/14mT8BCOXiUUcGlb7KujkT">
                     <div className="flex justify-center items-center">
-                        <div className="flex justify-center animate-spin">
+                        <div className="flex justify-center hover:animate-spin">
                         <box-icon name='spotify' type='logo' color='#DC2626' ></box-icon>
                         </div>
-                        <div className="text-sm">
+                        <div className="">
                             I think they call this love-Cover
                         </div>
                     </div>
@@ -107,14 +107,14 @@ const BottomInfo = () => {
                 <div className="flex justify-center items-center w">
                     
                     <div
-                        className={`border-x-[2px] px-5 border-zinc-800 border-dotted flex flex-grow justify-center items-center py-2 text-zinc-300 hover:text-zinc-100 ${text_color}`}
+                        className={`border-x-[2px] px-5 border-zinc-800 border-dotted flex flex-grow justify-center items-center py-2 text-zinc-900 ${text_color}`}
                     >
                         {time.date}
                     </div>
 
 
                     <div
-                        className={`border-r-[2px] px-5 border-dotted border-zinc-800 flex flex-grow justify-center items-center py-2 text-zinc-300 hover:text-zinc-100 ${text_color}`}
+                        className={`border-r-[2px] px-5 border-dotted border-zinc-800 flex flex-grow justify-center items-center py-2 text-zinc-900 ${text_color}`}
                     >
                         {time.hour < 10 ? `0${time.hour}` : time.hour}:
                         {time.minute < 10 ? `0${time.minute}` : time.minute}:
@@ -122,19 +122,19 @@ const BottomInfo = () => {
                     </div>
 
                     <div
-                        className={`border-r-[2px] px-5 border-dotted border-zinc-800 flex flex-grow justify-center items-center py-2 text-zinc-300 hover:text-zinc-100 ${text_color}`}
+                        className={`border-r-[2px] px-5 border-dotted border-zinc-800 flex flex-grow justify-center items-center py-2 text-zinc-900 ${text_color}`}
                     >
                         Battery: {battery.level}% {battery.charging ? "⚡ " : ""}
                     </div>
 
 
                     <div
-                        className={`w-20 border-r-[2px] px-5 border-dotted border-zinc-800 flex flex-grow justify-center items-center py-2 text-zinc-300 hover:text-zinc-100 ${text_color}`}
+                        className={`w-20 border-r-[2px] px-5 border-dotted border-zinc-800 flex flex-grow justify-center items-center py-2 text-zinc-900 ${text_color}`}
                     >
                         X:{mousePosition.x}
                     </div>
                     <div
-                        className={`w-20 flex flex-grow px-5 text-zinc-300 hover:text-zinc-100 justify-center items-center ${text_color}`}
+                        className={`w-20 flex flex-grow px-5 text-zinc-900 justify-center items-center ${text_color}`}
                     >
                         Y:{mousePosition.y}
                     </div>
