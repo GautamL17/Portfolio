@@ -13,6 +13,7 @@
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.9.59",
     "@tailwindcss/vite": "^4.0.0",
+    "axios": "^1.8.4",
     "boxicons": "^2.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
